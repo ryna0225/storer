@@ -91,7 +91,7 @@ class ContactController extends Controller
 
         $response = new StreamedResponse(function () use ($csvHeader, $csvData) {
             $createCsvFile = fopen('php://output', 'w');
-
+            
             mb_convert_variables('SJIS-win', 'UTF-8', $csvHeader);
 
             fputcsv($createCsvFile, $csvHeader);
@@ -124,7 +124,7 @@ class ContactController extends Controller
         if (!empty($request->gender)) {
             $query->where('gender', '=', $request->gender);
         }
-
+        
         if (!empty($request->category_id)) {
             $query->where('category_id', '=', $request->category_id);
         }
