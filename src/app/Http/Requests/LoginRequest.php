@@ -29,6 +29,4 @@ class LoginRequest extends FortifyLoginRequest
             'password' => 'required'
         ];
     }
-
 }
-

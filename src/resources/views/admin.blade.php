@@ -78,7 +78,7 @@
           <a class="admin__detail-btn" href="#{{$contact->id}}">詳細</a>
         </td>
       </tr>
-      
+
       <div class="modal" id="{{$contact->id}}">
         <a href="#!" class="modal-overlay"></a>
         <div class="modal__inner">
